@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------- Home section ----------------------- */
+
+.header {
+  min-height: 98vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../img/banner.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 90%;
+}
+.black{
+  background-color: #272822;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+
+}
+
+nav .fa {
+  display: none;
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0px 40px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* --------------------- Home End --------------------------- */
+
+/* --------------------- Course Section --------------------- */
+
+.detale {
+  width: 80%;
+  padding-top: 70px;
+  text-align: center;
+  margin: auto;
+}
+
+.course h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.course p {
+  font-size: 14px;
+  color: #777;
+  padding: 10px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 2% 0% 2%;
+}
+
+.course-col {
+  text-align: center;
+  flex: 31%;
+  background-color: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  margin: 5% 2% 0% 2%;
+  transition: 0.5s;
+}
+
+.course-col:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -------------------- Course Section End ------------------ */
+
+/* ------------------------ Campus section ------------------------- */
+.campus {
+  width: 97%;
+  text-align: center;
+  /* margin: auto; */
+  padding-top: 50px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.campus .campus-col img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.campus .campus-col .layer {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.campus .campus-col .layer:hover {
+  background-color: rgba(226, 0, 0, 0.7);
+  cursor: pointer;
+
+}
+
+.layer h3 {
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  cursor: pointer;
+  opacity: 1;
+  bottom: 49%;
+}
+
+/* ------------------------ Campus section End ------------------------- */
+
+/* ------------------------ facilities section ------------------------- */
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  padding: 20px;
+}
+
+.facilities-col:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.facilities-col p {
+  padding: 0;
+
+}
+
+.facilities-col img {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* ------------------------ facilities section End ------------------------- */
+
+/* ------------------------- textimonials ------------------------------- */
+.textimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #fff3f3;
+  cursor: pointer;
+  display: flex;
+  padding: 25px;
+}
+
+.textimonials-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.textimonials-col p {
+  padding: 0;
+}
+
+.textimonials-col p {
+  margin-top: 15px;
+}
+.textimonials-col .fa {
+color: #f44336;
+}
+.textimonials-col:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ------------------------ textimonials End -------------------------- */
+/* ------------------- Footer -------------------------- */
+.Footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.Footer h3{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.Footer .fa{
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.Footer p .fs{
+ color: #f44336;
+}
+/* -------------------- Button -------------------- */
+
+button {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 2.1rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  letter-spacing: 0.2rem;
+  padding: 1rem 2rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+button i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+button:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+button i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+button:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+/* ------------------- Button section  End -------------------- */
+
+@media (max-width:770px) {
+  .text-box h1 {
+    font-size: 35px;
+  }
+  .textimonials-col img {
+    margin-left: 2px;
+    margin-right: 20px;
+  }
+  .text-box p {
+    margin: 10px 0px 40px;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .textimonials-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .text-box p {
+    margin: 10px 0px 40px;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  .text-box button {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links ul li:hover {
+    color: #27272c;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #f44336;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    left: -200px;
+    text-align: center;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    text-align: right;
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
